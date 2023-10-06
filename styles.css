@@ -1,0 +1,555 @@
+:root {
+
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(214, 15%, 80%);
+    --grayish-blue: hsl(201, 11%, 66%);
+
+    --padding-container: 80px 0;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* popup cookie*/
+
+.popup .open-btn {
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    cursor: pointer;
+
+}
+
+.popup .open-btn:hover{
+    letter-spacing: 1px;
+}
+.popup .open-btn:active{
+    box-shadow: none;
+    transform: scale(.9);
+}
+
+.cookies-box{
+    width: 250px;
+    position: fixed;
+    bottom: 100px; left: -400px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+}
+
+.cookies-box.active{
+    left: 20px;
+}
+
+.cookies-box img{
+    height: 110px;
+    animation: image 10s linear infinite;
+}
+
+@keyframes image{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.cookies-box h3{
+    color: #333;
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+.cookies-box p{
+    color: #666;
+    font-size: 13px;
+    padding: 5px 0;
+    line-height: 1.18;
+}
+
+.cookies-box .accept{
+    background: burlywood;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.cookies-box .accept:hover{
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+.cookies-box .settings{
+    color: #999;
+}
+
+.cookies-box .settings:hover{
+    color: coral;
+}
+
+.cookies-box .close-btn{
+    position: absolute;
+    top: -2px; right: 12px;
+    font-size: 40px;
+    color: #999;
+    cursor: pointer;
+}
+
+.cookies-box .close-btn:hover{
+    color: #333;
+
+}
+
+/* header*/
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero {
+    --padding-container: 120px 0 80px;
+    background-image: url('media/naja1-bertolt-jensen-FxnqdmKBJps-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.hero__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4.5em;
+    width: 125px;
+    height: 125px;
+}
+
+.hero__title {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.hero__paragraph {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+/* track */
+
+.track__texts {
+    text-align: center;
+}
+
+.title1 {
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+}
+
+.paragraph {
+    line-height: 1.5;
+    color: var(--grayish-blue);
+    margin-top: 1.5em;
+}
+
+.track__img {
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 3.5em;
+}
+
+.track__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.track__offer {
+    color: var(--dark-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.track__copy {
+    margin-top: .7em;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+/* clipboard */
+
+.clipboard {
+    text-align: center;
+}
+
+.clipboard__picture {
+    margin: 3em 0 6em;
+}
+
+.clipboard__img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.clipboard__offer {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+}
+
+.clipboard__icon {
+    display: block;
+    width: 75px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+
+.clipboard__title {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.clipboard__paragraph {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin-top: 1em;
+}
+
+/* brands */
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5em;
+}
+
+.action {
+    text-align: center;
+}
+
+/* cards*/
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: slategrey;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20PX;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* newsletter*/
+
+form {
+    border: 4px solid #f1f1f1;
+  }
+  
+.carta{
+    min-width: 150px;
+    flex: 1;
+}
+  .newsletter {
+    padding: 30px;
+    background-color: #f1f1f1;
+  }
+
+  input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    display: flexbox;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+ 
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+
+
+/* footer */
+
+.footer {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.footer__img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.footer__media {
+    text-decoration: none;
+}
+
+.footer__icon {
+    display: block;
+}
+
+@media (min-width:768px) {
+
+    .hero {
+        --padding-container: 120px 0 90px;
+        background-image: url('media/naja1-bertolt-jensen-FxnqdmKBJps-unsplash.jpg');
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    /* track */
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+
+    .track {
+        --padding-container: 80px 0 0;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .track__texts {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+    }
+
+    .track__picture {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        height: 700px;
+    }
+
+
+    .track__img {
+        width: 125%;
+        max-width: 650px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    .track__articles {
+        width: 42%;
+        gap: 3em;
+        margin: 0 auto;
+        text-align: left;
+        align-self: center;
+    }
+
+    .track__offer {
+        color: var(--dark-grayish-blue);
+        font-size: 1.5rem;
+    }
+
+    .track__copy {
+        margin-top: .7em;
+        line-height: 1.5;
+        color: var(--grayish-blue);
+    }
+
+
+    /* clipboard */
+
+    .clipboard {
+        --padding-container: 20px 0 80px;
+    }
+
+    .clipboard__img {
+        max-width: 700px;
+    }
+
+    .clipboard__offer {
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .clipboard__item {
+        flex: 1;
+    }
+
+    /* marcas */
+
+    .brands {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .brands__item {
+        min-width: 150px;
+        max-width: 150px;
+        flex: 1;
+    }
+
+
+    .footer__container {
+       display: flex;
+       gap: 2em;
+       align-items: center;
+    }
+
+    .footer__img {
+       width: 70px;
+    }
+
+    .footer__links {
+        margin: 0;
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__link {
+        width: 28%;
+    }
+
+   
+    .footer__social {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="media/water.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Contaminacion del Agua</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="hero">
+
+        <section class="hero__container container">
+          
+          <figure class="hero__picture">
+            <img src="media/logo-menu.png" class="hero__img">
+          </figure>
+    
+          <h1 class="hero__title">💧 Contaminacion del Agua 🧪</h1>
+          <p class="hero__paragraph">La contaminación del agua es un grave problema global que afecta a la calidad y disponibilidad del agua dulce. ¿Como lo prevenimos?</p>
+    
+        </section>
+    
+      </header>
+
+      <div class="popup">
+        <button class="open-btn">show popup</button>
+      </div>
+    <div class="cookies-box">
+      <span class="close-btn">&times;</span>
+      <img src="media/cookie.png" alt="">
+      <h3>Cookies and Privacy</h3>
+      <p>This website use cookies to ensure you to get the best experience on our website</p>
+      <a href="#" class="accept">Accept all cookies</a>
+      <a href="#" class="settings">Customize settings</a>
+    </div>
+    <script>document.querySelector('.open-btn').onclick = () => {
+      document.querySelector('.cookies-box').classList.add('active');
+  }
+  
+  document.querySelector('.close-btn').onclick = () => {
+      document.querySelector('.cookies-box').classList.remove('active');
+  }</script>
+
+      <main class="main">
+        <section class="track container">
+    
+          <div class="track__texts">
+            <h2 class="title">Soluciones y como ayudar</h2>
+            <p class="paragraph">La prevención de la contaminación del agua es esencial para garantizar un suministro de agua seguro y sostenible para las generaciones futuras y para proteger la biodiversidad de los ecosistemas acuáticos en peligro de extincion. </p>
+          </div>
+    
+          <figure class="track__picture">
+            <img src="media/undraw_The_world_is_mine_re_j5cr.png" class="track__img">
+          </figure>
+    
+          <article class="track__articles">
+    
+    
+            <div class="track__item">
+              
+              <h3 class="track__offer">♻️ Tratamiento de aguas residuales</h3>
+              <p class="track__copy">Implementar sistemas de tratamiento de aguas residuales eficientes para eliminar contaminantes antes de liberar el agua en el medio ambiente.</p>
+    
+            </div>
+    
+            <div class="track__item">
+              
+              <h3 class="track__offer">📚 Educación y conciencia</h3>
+              <p class="track__copy">Promover la educación sobre la importancia del agua y las prácticas responsables de gestión de residuos entre la población.
+              </p>
+    
+            </div>
+    
+            <div class="track__item">
+              
+              <h3 class="track__offer">⚖️ Regulaciones y cumplimiento</h3>
+              <p class="track__copy"> Establecer y hacer cumplir leyes y regulaciones ambientales que limiten la descarga de contaminantes al agua.</p>
+    
+            </div>
+    
+    
+          </article>
+    
+        </section>
+    
+        <section class="clipboard container">
+    
+          <h2 class="title">Estadisticas sobre los residuos
+          </h2>
+          <p class="paragraph">En Argentina el 15% de la población no tiene acceso al agua potable,
+            el 40% vive sin cloacas y apenas el 20% de las aguas residuales cuenta
+            con un tratamiento en el país.
+            
+            Esta problematica afecta mucho a paises con escaso acceso al agua potable como:
+            Haiti, Madagascar, Mozambique y Afganistan.</p>
+    
+          <figure class="clipboard__picture">
+            <img src="media/grafica2.jpeg" class="clipboard__img">
+          </figure>
+
+          <figure class="clipboard__picture">
+            <img src="media/grafica1.png" class="clipboard__img">
+          </figure>
+
+          <figure class="clipboard__picture">
+            <img src="media/grafica4.jpg" class="clipboard__img">
+          </figure>
+    
+          <h2 class="title">Compañias Eco-Friendly 🌱
+          </h2>
+          <p class="paragraph">Estas son algunas compañías y organizaciones que están comprometidas con la promoción de prácticas y tecnologías para prevenir la contaminación del agua y promover la gestión sostenible de los recursos hídricos al igual que los recursos medioambientales.</p>
+    
+          <div class="clipboard__offer">
+    
+            <article class="clipboard__item">
+              <img src="media/efeverde.png" class="clipboard__icon">
+              <h3 class="clipboard__title">EFE:Verde</h3>
+              <p class="clipboard__paragraph">Sitio de noticias, reportajes e infomacion sobre el medio ambiente en Argentina.</p>
+            </article>
+    
+            <article class="clipboard__item">
+              <img src="media/National-Geographic-Logo.svg.png" class="clipboard__icon">
+              <h3 class="clipboard__title">National Geographic</h3>
+              <p class="clipboard__paragraph">El reconocido sitio de Nathional Geographic proporciona noticias sobre lo ultimo en medio ambiente y el planeta.</p>
+            </article>
+    
+            <article class="clipboard__item">
+              <img src="media/WWF_logo.svg.png" class="clipboard__icon">
+              <h3 class="clipboard__title">World Wild Life</h3>
+              <p class="clipboard__paragraph">Sitio sobre la concervacion del medio ambiente y especies en extincion.</p>
+            </article>
+    
+          </div>
+    
+        </section>
+    
+        <section class="brands container">
+    
+          <a title="Ecolab" href="https://es-es.ecolab.com/"><img src="media/ecolab-logo.png" class="brands__item"></a>
+          <a title="Unilever" href="https://www.unilever-northlatam.com/news/press-releases/2019/unilever-continua-reduciendo-el-impacto-ambiental-de-sus-operaciones/"> <img src="media/Unilever New.svg" class="brands__item"></a>
+          <a title="The Nature Conservancy" href="https://www.nature.org/es-us/"> <img src="media/The Nature Conservancy.svg" class="brands__item"></a>
+          <a title="Water.org" href="https://water.org/"> <img src="media/Water.org_logo.png_updated.png" class="brands__item"></a>
+          <a title="Coca-Cola" href="https://agenda2030.lat/noticia/421/el-uso-del-agua-las-dos-caras-de-coca-cola"> <img src="media/coca-cola-logo-0.png" class="brands__item"></a>
+    
+        </section>
+
+        <section class="cards">
+
+          <div class="card">
+            <div class="face front">
+                <img src="media/ecologiaverde.png" alt="">
+                <h3>🌱EcologíaVerde🌴</h3>
+            </div>
+            <div class="face back">
+                <h3>🌱Ecologia Verde🌴</h3>
+                <p>Canal dedicado a la divulgacion ambiental.</p>
+                <div class="link">
+                    <a href="https://www.youtube.com/@EcologiaVerde">Link al canal</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="media/geoenciclopedia.png" alt="">
+                <h3>⛰️GEOenciclopedia🌎</h3>
+            </div>
+            <div class="face back">
+                <h3>⛰️Geo enciclopedia🌎</h3>
+                <p>Canal dedicado a la informacion sobre la tierra</p>
+                <div class="link">
+                    <a href="https://www.youtube.com/@GeoEnciclopedia1">Link al canal</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="media/bioenciclopedia.png" alt="">
+                <h3>🦘BIOencliclopedia🐠</h3>
+            </div>
+            <div class="face back">
+                <h3>🦘Bio enciclopedia🐠</h3>
+                <p>Canal dedicado a la informacion sobre animales</p>
+                <div class="link">
+                    <a href="https://www.youtube.com/@BioEnciclopedia/videos">Link al canal</a>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <section class="action container">
+    
+          <h2 class="title">Suscribite a nuestro Newsletter!💚</h2>
+          <p class="paragraph">Si queres estar infomado sobre lo ultimo en noticias sobre el medio ambiente tanto en Argentina como en el mundo, te invitamos a suscribirte para recibir noticias mensuales sobre lo que pasa en nuestro planeta.</p>
+
+          <form action="action_page.php">
+            <div class="newsletter">
+              <h2>🌎✉️</h2>
+            </div>
+
+            <div class="carta">
+              <img src="media/mailbox.png" alt="">
+            </div>
+          
+            <div class="container_new" style="background-color:white">
+              <input type="text" placeholder="Nombre" name="name" required>
+              <input type="text" placeholder="Email" name="mail" required>
+          
+            <div class="container_submit">
+              <input type="submit" value="Suscribirse!">
+            </div>
+          </form>
+
+        </section>
+        </div>
+      </main>
+      
+      <footer class="footer">
+    
+        <section class="footer__container container">
+    
+          <figure class="footer__picture">
+            <img src="media/logo-water.png"footer__img">
+          </figure>
+    
+          <div class="footer__links">
+            <a href="#" class="footer__link">© Hecho por Brenda Diaz - 2023</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </div>
+    
+          <div class="footer__social">
+    
+            <a href="#" class="footer__media">
+              <img src="media/icon-facebook.svg" class="footer__icon">
+            </a>
+    
+            <a href="#" class="footer__media">
+              <img src="media/icon-twitter.svg" class="footer__icon">
+            </a>
+    
+            <a href="#" class="footer__media">
+              <img src="media/icon-instagram.svg" class="footer__icon">
+            </a>
+    
+          </div>
+    
+        </section>
+    
+      </footer>
+</body>
+</html>
